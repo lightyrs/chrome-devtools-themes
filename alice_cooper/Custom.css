@@ -171,12 +171,21 @@ button.status-bar-item.toggled-on .glyph {
   line-height: 12px !important;
 }
 
+#-webkit-web-inspector .split-view-sidebar-right {
+  border-left: 1px solid #444444 !important;
+  background: #272822 !important;
+}
+
+#-webkit-web-inspector .styles-section:not(.first-styles-section) {
+  border-top: 1px solid #444444 !important;
+}
+
 #-webkit-web-inspector .pane > .title,
 #-webkit-web-inspector .split-view-sidebar-right .pane .sidebar-separator {
   background-image: -webkit-linear-gradient(#505050,#383838) !important;
   padding: 2px 5px !important;
   border-top: 1px solid #636363 !important;
-  border-bottom: 1px solid black !important;
+  border-bottom: 1px solid rgba(0,0,0,0.3) !important;
   color: #eee !important;
   text-shadow: #222 0 1px 0 !important;
   white-space: nowrap !important;
@@ -585,4 +594,23 @@ button.status-bar-item.toggled-on .glyph {
 
 .styles-section .properties li.child-editing span {
   background: transparent !important;
+}
+
+#-webkit-web-inspector #error-warning-count {
+  margin-right: 10px;
+}
+
+#-webkit-web-inspector .section .header {
+  color: rgba(102, 217, 239, 1) !important;
+}
+
+#-webkit-web-inspector .section .properties .name,
+#-webkit-web-inspector .event-properties .name,
+#-webkit-web-inspector .console-formatted-object .name {
+  color: rgba(249, 38, 114, 1) !important;
+}
+
+#-webkit-web-inspector .event-bars .event-bar .header .title {
+  color: #fff !important;
+  text-shadow: none !important;
 }
