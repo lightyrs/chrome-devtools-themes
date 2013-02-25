@@ -28,10 +28,15 @@ Darcy Clarke:
 http://darcyclarke.me/design/skin-your-chrome-inspector
 ----------------------------------------------------------------------------------------------------------*/
 
+#-webkit-web-inspector {
+  background-color: #272822 !important;
+}
+
 
 /* GENERIC TYPO, COLORS, SIDEBAR
 ----------------------------------------------------------------------------------------------------------*/
 
+#-webkit-web-inspector .styles-section,
 #-webkit-web-inspector #main-panels .script-view,
 #-webkit-web-inspector #main-panels .source-code,
 #-webkit-web-inspector #main-panels .text-editor-contents {
@@ -44,12 +49,12 @@ http://darcyclarke.me/design/skin-your-chrome-inspector
 
 #-webkit-web-inspector .monospace,
 #-webkit-web-inspector .source-code {
-  font-size: 13px !important;
+  color: rgba(193, 193, 193, 1);
+  font-size: 15px !important;
   font-family: "Bitstream Vera Sans Mono", monospace !important;
 }
 
 #-webkit-web-inspector #main-panels .resource-headers-view .source-code {
-  background-color: #fff !important;
   font-size: 13px !important;
   line-height: 14px !important;
 }
@@ -69,11 +74,6 @@ http://darcyclarke.me/design/skin-your-chrome-inspector
 
 #-webkit-web-inspector .long-click-glyph {
   display: none !important;
-}
-
-#-webkit-web-inspector .status-bar li {
-  position: relative;
-  top: 1px;
 }
 
 #-webkit-web-inspector .status-bar li,
@@ -140,6 +140,10 @@ http://darcyclarke.me/design/skin-your-chrome-inspector
   background-color: rgba(0,0,0,0.4) !important;
 }
 
+#-webkit-web-inspector #toolbar .toolbar-item {
+  height: 32px !important;
+}
+
 button.status-bar-item.toggled-on .glyph {
   background-color: yellow !important;
 }
@@ -149,18 +153,25 @@ button.status-bar-item.toggled-on .glyph {
   color: #f8f8f8 !important;
 }
 
-#-webkit-web-inspector #toolbar div:first-child {
-  display: none !important;
-}
-
 #-webkit-web-inspector #toolbar > div:first-child {
   display: block !important;
+}
+
+#-webkit-web-inspector #close-button-left,
+#-webkit-web-inspector #close-button-right {
+  position: relative;
+  top: 9px;
 }
 
 #-webkit-web-inspector #main {
   top: 34px !important;
 }
 
+.pane > .title {
+  line-height: 12px !important;
+}
+
+.pane > .title,
 .split-view-sidebar-right .pane .sidebar-separator {
   background-image: -webkit-linear-gradient(#505050,#383838) !important;
   padding: 2px 5px !important;
@@ -172,30 +183,6 @@ button.status-bar-item.toggled-on .glyph {
   text-overflow: ellipsis !important;
   overflow: hidden !important;
   font-size: 11px !important;
-}
-
-.filter-all .console-warning-level span,
-.filter-warnings .console-warning-level span,
-.filter-all .console-error-level span,
-.filter-errors .console-error-level span,
-.filter-all .console-log-level span,
-.filter-logs .console-log-level span {
-  -webkit-animation: none !important;
-}
-
-.filter-all .console-warning-level span,
-.filter-warnings .console-warning-level span {
-  font-size: 12px !important;
-}
-
-.filter-all .console-error-level span,
-.filter-warnings .console-error-level span {
-  font-size: 11px !important;
-}
-
-.filter-all .console-log-level span,
-.filter-warnings .console-log-level span {
-  font-size: 14px !important;
 }
 
 
@@ -567,4 +554,16 @@ button.status-bar-item.toggled-on .glyph {
 
 .styles-element-state-pane.expanded {
   margin-top: 0 !important;
+}
+
+.styles-section .header .title,
+.styles-section .header .title span,
+.styles-section ol + div,
+.styles-section .selector-matches {
+  color: rgba(230, 219, 116, 1) !important;
+}
+
+.styles-section .webkit-css-property,
+.styles-section .webkit-css-at-rule  {
+  color: rgba(166, 226, 46, 1) !important;
 }
