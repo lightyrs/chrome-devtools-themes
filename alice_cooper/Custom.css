@@ -167,12 +167,12 @@ button.status-bar-item.toggled-on .glyph {
   top: 34px !important;
 }
 
-.pane > .title {
+#-webkit-web-inspector .pane > .title {
   line-height: 12px !important;
 }
 
-.pane > .title,
-.split-view-sidebar-right .pane .sidebar-separator {
+#-webkit-web-inspector .pane > .title,
+#-webkit-web-inspector .split-view-sidebar-right .pane .sidebar-separator {
   background-image: -webkit-linear-gradient(#505050,#383838) !important;
   padding: 2px 5px !important;
   border-top: 1px solid #636363 !important;
@@ -185,6 +185,11 @@ button.status-bar-item.toggled-on .glyph {
   font-size: 11px !important;
 }
 
+#-webkit-web-inspector .pane > .title > .pane-title-button,
+#-webkit-web-inspector .pane > .title > select.select-settings {
+  position: relative;
+  top: -3px;
+}
 
 /* ELEMENTS
 ----------------------------------------------------------------------------------------------------------*/
@@ -563,7 +568,21 @@ button.status-bar-item.toggled-on .glyph {
   color: rgba(230, 219, 116, 1) !important;
 }
 
+.styles-section span.value {
+  color: rgba(193, 193, 193, 1) !important;
+}
+
 .styles-section .webkit-css-property,
-.styles-section .webkit-css-at-rule  {
+.styles-section .webkit-css-at-rule {
   color: rgba(166, 226, 46, 1) !important;
+}
+
+.styles-section .properties li.child-editing {
+  background: rgba(255, 255, 255, 0.1);
+  border-right: 10px solid yellow;
+  border-left: 5px solid #f8f8f8;
+}
+
+.styles-section .properties li.child-editing span {
+  background: transparent !important;
 }
