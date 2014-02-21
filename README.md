@@ -1,6 +1,8 @@
 Chrome DevTools Themes
 ======================
 
+This is not an actively maintained repo. I come back to it every once in awhile but lately have been well-served by https://github.com/karelvuong/themes-for-devtools.
+
 **alice_cooper**
 
 A dark skin inspired by the visual aesthetic of codepen.io.
